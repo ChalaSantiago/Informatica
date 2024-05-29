@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio de Carros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        p {
+            color: red;
+            font-family: Times New Roman, sans-serif;
+            font-size: 20px;
+        }
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        section {
+            padding: 20px;
+            margin-right: 20%;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+        }
+        .texto-grande {
+            font-size: 24px;
+        }
+        .texto-pequeno {
+            font-size: 12px;
+        }
+        #texto-personalizado {
+            font-family: Arial, sans-serif;
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            visibility: visible;
+        }
+
+        img:hover {
+            visibility: hidden;
+        }
+        
+        /* Clases... Siempre se busca una clase con punto.
+        ej: .Class */
+
+        .Welcome {
+        font-size: 150%
+        }
+
+        .Description {
+        font-size: 100%
+        }
+
+        .TableHeader {
+            text-decoration: underline;
+            text-underline-offset: 0px;
+        }
+
+        /* Vea, esto es un ID... Siempre se busca un ID con Asterisco.
+        ej: #ID */
+
+        #Title1 {
+        font-family: arial;
+        font-size: 120%
+        }
+
+        #Title2 {
+        font-family: cursive;
+        font-size: 150%
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        nav {
+            background: aqua;
+            font-size: 125%;
+        }
+        
+        a{
+            font-style: italic;
+            color: gold;    
+            
+        }
+
+        .carroexotico{
+            position: absolute;
+            top: 10px;
+            right: 5px;
+        }
+
+        .headerClass {
+            position: relative;
+        }
+
+        aside {
+            padding-left: 15px;
+            margin-left: 50%;
+            margin-top: 10px;
+            float: right;
+            font-style: italic;
+            /* background-color: lightgray; */
+        }
+    </style>   
+</head>
+
+<header class="headerClass">
+    <h1>Mi Sitio de Carros</h1>
+    <img class="carroexotico" height="10%" width="10%" src="https://bocamafrapremium.com.br/wp-content/uploads/2024/01/f23b00209dae4dd0ae8e246860629a30_1700915930902.jpg">
+</header>
+
+<body>
+    <!-- navbar modificado utilizando plantilla boostrap-->
+    <nav class="navbar bg-body-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.toyota.com.co/lc-300-gr-s/">toyota lc300 </a> 
+        </div>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.mercedes-benz.com.co/clase-g">mercedes clase g</a> 
+        </div>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#Title1">mazda cx5</a> 
+        </div>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#Title2">Toyota Prado</a> 
+        </div>
+    </nav>
+   
+    <aside>
+        <h2>Últimos modelos</h2> 
+        <!-- table modificado utilizando plantilla boostrap-->
+        <table class="table-light">
+            <tr class="table-light">
+              <th class="table-light">Company</th>
+              <th class="table-light">model</th>
+              <th class="table-light">Country</th>
+            </tr>
+            <tr class="table-light">
+              <td class="table-light">bmw</td>
+              <td class="table-light">bmw x4</td>
+              <td class="table-light">Germany</td>
+            </tr>
+            <tr class="table-light">
+              <td class="table-light">tesla</td>
+              <td class="table-light">Cybertruck</td>
+              <td class="table-light">Mexico</td>
+            </tr>
+          </table>
+    </aside>
+
+    <section>
+        <h2>Descripción del sitio web</h2>
+        <p class="Description" id="Title1">Bienvenido a Mi Sitio de Carros. Aquí encontrarás información sobre los últimos modelos de automóviles, noticias del mundo automotriz y consejos para mantenimiento y cuidado de tu vehículo.</p>
+        
+        <div>
+            <h2>Noticias</h2>
+            <p class="Description" id="Title1">¡Nuevos lanzamientos!</p>
+        </div>
+
+<!-- Cuando quiera tener una imagen en la pagina web... La busca en google, click derecho -> Copiar vinculo... Y pega el texto-->
+
+        <img src="https://fotos-jornaldocarro-estadao.nyc3.cdn.digitaloceanspaces.com/uploads/2017/10/26144640/Fiat-Argo-SUV_L.jpg" width="50%" height="50%" alt="Carro">
+        
+        <h2 id="Title1">mazda cx5</h2>
+        <article>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4nhq5U3I5fFrgVkaynDHEOCl6jJgCAwdBjJp0I0mI7w&s" alt="Carro 1">
+            <p>Descripción del Carro 1: MAZDA CX-5:La Mazda CX-5 es una SUV compacta que combina un diseño elegante con un rendimiento dinámico. Con su interior espacioso y repleto de tecnología, ofrece comodidad y conveniencia para conductores y pasajeros por igual. Equipada con avanzadas características de seguridad y un eficiente motor, la CX-5 proporciona una experiencia de conducción emocionante y confiable en cualquier tipo de viaje.</p>
+        </article>
+        
+        <h2 id="Title2">Toyota Prado</h2>
+        <article>
+            <img height="50%" width="50%"
+            src="https://www.toyota.com.co/wp-content/uploads/2020/08/NEGRO-11-1.jpg" alt="Carro 2">
+            <p class="Description">Descripción del Carro 2: TOYOTA PRADO: La Toyota Prado es una SUV de tamaño medio producida por el fabricante japonés Toyota desde 1984. Conocida por su robustez, versatilidad y capacidad todoterreno, la Prado ha ganado una reputación mundial como una opción confiable para aventuras tanto en la ciudad como fuera de ella.</p>
+        </article>
+    </section>
+</body>
+<footer>
+    ¡Bienvenido a nuestra página de carros!
+    En este espacio dedicado a los amantes de los automóviles, te invitamos a explorar una amplia gama de vehículos, desde los más clásicos hasta los más modernos y sofisticados.
+    Nuestra misión es proporcionarte información detallada y actualizada sobre los últimos modelos, características innovadoras, tecnologías avanzadas y noticias relevantes del mundo automotriz.
+    Ya sea que estés buscando tu próximo vehículo, quieras mantenerte al día con las últimas tendencias del mercado automotriz o simplemente quieras disfrutar de imágenes inspiradoras y artículos interesantes sobre carros, estás en el lugar correcto.
+    ¡Disfruta de tu visita y sumérgete en el emocionante mundo de los automóviles con nosotros!
+</footer>    
+
+</html>
